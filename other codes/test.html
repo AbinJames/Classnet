@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Jquery Registration page validation</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('#submit').click(function(){
+var user=$('#user').val();
+var pass=$('#pass').val();
+var rpass=$('#rpass').val();
+var email=$('#email').val();
+var gender=$('#gender').val();
+
+if(user=="")
+{
+$('#dis').slideDown().html("<span>Please type Username</span>");
+return false;
+}
+if(pass=="")
+{
+$('#dis').slideDown().html('<span id="error">Please type Password</span>');
+return false;
+}
+if(rpass=="")
+{
+$('#dis').slideDown().html('<span id="error">Again type Password</span>');
+return false;
+}
+if(pass!=rpass)
+{
+$('#dis').slideDown().html('<span id="error">Password mismatch</span>');
+return false;
+}
+if(email=="")
+{
+$('#dis').slideDown().html('<span id="error">Please type email</span>');
+return false;
+}
+
+var filter = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+if(!filter.test(email))
+{
+$('#dis').slideDown().html('<span id="error">Please type correct email</span>');
+return false;
+}
+if ($("#gender:checked").length = 0){
+$('#dis').slideDown().html('<span id="error">Please choose gender</span>');
+return false;
+}
+});
+});
+</script>
+</head>
+<body>
+<fieldset style="width:290px;">
+<form method="post" action="">
+<h1 style="font-size:18px;">Jquery Registration page validation</h1>
+<label id="dis" style="width:250px;"></label><br>
+<div id="tex">Username:</div>
+<input type="text" name="user" id="user" /><br /><br />
+
+<div id="tex">Password:</div>
+<input type="password" name="pass" id="pass" /><br /><br />
+
+<div id="tex">Re-type Password:</div>
+<input type="password" name="pass" id="rpass" /><br /><br />
+
+<div id="tex">Email:</div>
+<input type="text" name="email" id="email"><br /><br />
+
+<div id="tex">Gender:</div>
+<input type="radio" name="gender" id="gender"> Male
+<input type="radio" name="gender" id="gender"> Female<br>
+<br>
+<center><input type="submit" name="submit" id="submit" /></center>
+</form>
+</fieldset>
+</body>
+</html>

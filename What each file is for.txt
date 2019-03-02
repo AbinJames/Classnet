@@ -1,0 +1,44 @@
+addfriend - php to add friends
+allevents - php to show all reminders
+allnotes - php to show all notes
+change - php to set user details
+changepass - php to change password
+chat - webpage for chat
+chatfriends - php to show friends in chat
+checkemail - php to check email
+checkpass - php to check password
+classNET - login/starting page
+dasboard - main account page
+dbconnect - php to connect to database
+defaultprofilepicture - base64 code for default profile image
+discus - php containing disscussions
+discussions - webpage containing discus and reply
+events - page for saving events
+filedown - php for file download
+fileupload - php for file upload
+fileview - php to view uploaded files
+homepage - php for main account page
+image - php for changing picture
+inote - display particular (acces only through note.php)
+insert - insert events into datbase
+login logout - for login and logout
+m - php to display chat in chat.php
+mates - php to diplay frinds
+messsages - displays messages in m.php
+note - diplays all user notes
+notedown - download saved notes
+profileimg - php for profile image upload
+profiles  - php for showing friend list
+register - php for signup
+reminders - webpage to show reminders
+replay - contains replays for discussion page
+settings - webpage to display settings
+sharefile - php to share file
+sharenote= php to share note
+smallchatfriends - show current messages in homepage
+te - save data from text editor to database
+text - text editor code
+texteditor - webpage to display texteditor
+upload - code to upload profile image
+uploadr - webpage for file upload and download
+user_settings - webpage for user ettings
